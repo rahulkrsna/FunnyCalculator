@@ -18,13 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtp-fS-anm">
-                                <rect key="frame" x="32" y="65.5" width="256" height="38.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtp-fS-anm">
+                                <rect key="frame" x="32" y="27.5" width="256" height="40"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vyC-W1-ytj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" red="1" green="0.90390370602916947" blue="0.21147651358044273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdh-fw-xjG">
+                                <rect key="frame" x="229" y="76" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="1xo-DL-Qdb"/>
+                                    <constraint firstAttribute="height" constant="64" id="5Uz-0E-WTW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="mgG-dT-ufH"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="clear"/>
+                                <connections>
+                                    <action selector="operatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="75S-R8-NCL"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="NEv-gd-qR7">
                                 <rect key="frame" x="32" y="148" width="256" height="64"/>
                                 <subviews>
@@ -171,17 +186,20 @@
                         <constraints>
                             <constraint firstItem="Jrq-KV-ilY" firstAttribute="top" secondItem="5OP-Vy-CJi" secondAttribute="bottom" constant="8" id="0uk-Rl-O3T"/>
                             <constraint firstItem="jSd-Xl-7OJ" firstAttribute="top" secondItem="NEv-gd-qR7" secondAttribute="bottom" constant="8" id="3Pv-Zj-Xrg"/>
+                            <constraint firstItem="cdh-fw-xjG" firstAttribute="centerX" secondItem="oTK-ki-vnb" secondAttribute="centerX" id="5oj-1L-WR0"/>
                             <constraint firstItem="Jrq-KV-ilY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BPh-GJ-5og"/>
                             <constraint firstItem="5OP-Vy-CJi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="40" id="Gio-9c-724"/>
                             <constraint firstItem="NEv-gd-qR7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I2k-EC-KMq"/>
+                            <constraint firstItem="cdh-fw-xjG" firstAttribute="top" secondItem="Xtp-fS-anm" secondAttribute="bottom" constant="8.5" id="O0x-6W-Cmb"/>
                             <constraint firstItem="5OP-Vy-CJi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RT1-Tm-Odn"/>
                             <constraint firstItem="Jrq-KV-ilY" firstAttribute="width" secondItem="Jrq-KV-ilY" secondAttribute="height" multiplier="4:1" id="VVT-HY-MSw"/>
                             <constraint firstItem="5OP-Vy-CJi" firstAttribute="width" secondItem="5OP-Vy-CJi" secondAttribute="height" multiplier="4:1" id="X2s-ks-nW6"/>
+                            <constraint firstItem="Xtp-fS-anm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c2I-uW-i2c"/>
                             <constraint firstItem="5OP-Vy-CJi" firstAttribute="width" secondItem="5OP-Vy-CJi" secondAttribute="height" multiplier="4:1" id="dGS-Yz-hyf"/>
                             <constraint firstItem="Xtp-fS-anm" firstAttribute="leading" secondItem="NEv-gd-qR7" secondAttribute="leading" id="dhp-Iq-bSV"/>
+                            <constraint firstItem="NEv-gd-qR7" firstAttribute="top" secondItem="cdh-fw-xjG" secondAttribute="bottom" constant="8" id="ezK-Uz-RRT"/>
                             <constraint firstItem="jSd-Xl-7OJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fF7-xy-7g4"/>
                             <constraint firstItem="Xtp-fS-anm" firstAttribute="width" secondItem="NEv-gd-qR7" secondAttribute="width" id="g9z-zc-F9t"/>
-                            <constraint firstItem="NEv-gd-qR7" firstAttribute="top" secondItem="Xtp-fS-anm" secondAttribute="bottom" constant="44" id="gKi-bY-Xcm"/>
                             <constraint firstItem="jSd-Xl-7OJ" firstAttribute="width" secondItem="jSd-Xl-7OJ" secondAttribute="height" multiplier="4:1" id="h4q-EI-QqU"/>
                             <constraint firstItem="Jrq-KV-ilY" firstAttribute="width" secondItem="Jrq-KV-ilY" secondAttribute="height" multiplier="4:1" id="kTz-NH-S6e"/>
                             <constraint firstItem="Jrq-KV-ilY" firstAttribute="width" secondItem="Jrq-KV-ilY" secondAttribute="height" multiplier="4:1" id="kor-fg-e5W"/>
@@ -195,11 +213,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-688" y="62"/>
+            <point key="canvasLocation" x="-688.125" y="61.267605633802816"/>
         </scene>
     </scenes>
     <resources>
         <image name="add" width="134" height="134"/>
+        <image name="clear" width="134" height="134"/>
         <image name="divide" width="134" height="134"/>
         <image name="eight" width="164" height="170"/>
         <image name="equals" width="400" height="120"/>

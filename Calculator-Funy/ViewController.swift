@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func operatorClicked(_ sender: UIButton) {
-        if self.calcState == CalcState.NEW_NUM_STARTED {
+        if self.calcState == CalcState.NEW_NUM_STARTED && sender.tag != 14 {
             return // coming here after Division by zero error
         }
         switch sender.tag {
@@ -53,6 +53,11 @@ class ViewController: UIViewController {
             print("times")
             self.operand1 = Int(self.outputLabel.text!)!
             self.operation = Operator.TIMES
+        case 14:
+            print("clear")
+            self.outputLabel.text = ""
+            self.operation = Operator.NOTHING
+            self.calcState = CalcState.NEW_NUM_STARTED
         default:
             return
         }

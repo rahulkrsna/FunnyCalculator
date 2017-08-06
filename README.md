@@ -4,7 +4,7 @@ A funny calculator tutorial
 
 ## Video Walkthrough
 
-<img src="http://imgur.com/YVe74Jr.gif" title="Funny Calculator" width='' alt='Video Walkthrough'/>
+<img src="http://imgur.com/a/W6UQS.gif" title="Funny Calculator" width='' alt='Video Walkthrough'/>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap).
 
